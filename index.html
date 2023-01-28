@@ -4,19 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <script src="js/all.min.js"></script>
-    .container {
-    width: 1000px;
-    min-height: 200px;
-}
+    <style>
+      body {
+        background-image: url("bg2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: ;
+        background-attachment: fixed;
+      }
+     
+    </style>
+    <link rel="shortcut icon" href="img/RC.png" type="image/x-icon" />
   </head>
   <body>
-    
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-info fw-bold fw shadow-sm" >
+    <nav class="navbar navbar-expand-lg bg-info fw-bold fw shadow-sm">
       <div class="container">
         <a class="navbar-brand">
           <i class="fa-solid fa-h"></i>
@@ -33,10 +38,6 @@
           <i class="fa-solid fa-i"></i>
           <i class="fa-solid fa-s"></i>
           <i class="fa-solid fa-a"></i>
-
-  
-  
-        
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,9 +47,17 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house-user fa-2x"></i></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects"><i class="fa-solid fa-file fa-2x"></i></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-thumbtack fa-2x"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#web developer">Web Developer</a></li>
+                <li><a class="dropdown-item" href="#logo">Design Logo</a></li>
+                <li><a class="dropdown-item" href="#blog">Content Writer</a></li>
+              </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#contact"><i class="fa-regular fa-address-card fa-2x"></i></a>
             </li>
@@ -59,56 +68,92 @@
     <!-- Akhir Navbar -->
 
     <!-- Home -->
-    <div id="home" class="container text-sm-center bg-danger-subtle">
-    <img src="Frisam.jpg" class="rounded-circle mx-auto d-block" alt="Frisa Maharani" width="200">
-          <p class="md-4">An Enthusiast Beginner Front End Developer</p>
-
-          <p> I am a passionate person who have a high learning spirit, reliable, punctual, and can easily adapt to new environments. I am used to working under pressure, and be a problem solver. 
-            An Innovative person who have a several experience with programming languages, customer relationship, marketing, and finance.</p>
-            
-            <p>My Background Education <BR>
-
-              Bachelor of Management (The Open University of Indonesia, GPA : 3.15) <br>
-              Associate of computerized accounting (Telkom University, GPA : 3,55)
-
-
-            </p>
-         
-    
+    <div id="home" class="container text-sm-center">
       
-    </div>
-   
+        <img class="img-fluid rounded-circle mx-auto d-block" src="Frisam.jpg" alt="" width="200">
+      
+        <p class="md-3 text-black">An Enthusiast Beginner Front End Developer</p>
 
+        <p class="md-3 text-black">
+          I am a passionate person who have a high learning spirit, reliable, punctual, and can easily adapt to new environments. I am used to working under pressure, and be a problem solver. An Innovative person who have a several
+          experience with programming languages, customer relationship, marketing, and finance.
+        </p>
+
+        <p class="md-3 text-black">
+          My Background Education <br />
+
+          Bachelor of Management (The Open University of Indonesia, GPA : 3.15) <br />
+          Associate of computerized accounting (Telkom University, GPA : 3,55)
+        </p>
+      </div>
+    </div>
     <!-- Akhir Home
      -->
     <!-- Projects -->
-    <div id="projects" class="container">
+    <div id="web developer" class="container">
       <h2 class="text-center bg-info text-warning-emphasis">Glimpse of My Projects</h2>
-      
-        <div class="col-4 pt-4">
-          
-        </div>
 
-        <div class="row">
-          <div class="col-7">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden">
-              <h2 class="text warning text-center">Aplikasi Perhitungan Jumlah Pesanan Menggunakan EPQ</h2><br>
-              <p style="text-align: center"></p>
-  
-              <p style="text-align: justify"><strong>Software : </strong> Aplikasi ini berbasis Web dan dibangun dengan menggunakan Bahasa 
-                Pemrograman PHP dan basis data MYSQL</p><br>
-                <p>Untuk kegunaan dan manfaat dari Aplikasi dapat dilihat di video berikut</p>
-  
-            </div>
+      <div class="col-4 pt-4"></div>
+
+      <div class="row">
+        <div class="col-7">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden">
+            <h2 class="text warning text-center">Aplikasi Perhitungan Jumlah Pesanan Menggunakan EPQ</h2>
+            <br />
+            <p style="text-align: center"></p>
+
+            <p class="md-3 text-black justify-content-around"><strong>Software : </strong> Aplikasi ini berbasis Web dan dibangun dengan menggunakan Bahasa Pemrograman PHP dan basis data MYSQL</p>
+            <br />
+            <p class="md-3 text-black justify-content-around">Untuk kegunaan dan manfaat dari Aplikasi dapat dilihat di video berikut</p>
           </div>
-
-          <div class="col-5">
-            <iframe width="450" height="315" src="https://www.youtube.com/embed/aoNYjEC9Cu8" 
-            title="YouTube video player" frameborder="2" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen></iframe>
         </div>
-            
+
+        <div class="col-2 .video-fluid">
+          <iframe
+            width="390"
+            height="315"
+            src="https://www.youtube.com/embed/aoNYjEC9Cu8"
+            title="YouTube video player"
+            frameborder="2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="logo" class="container">
+      <div class="row">
+        <div class="">
+         
+            <h2 class="text warning text-center">Design Logo</h2>
+            <br>
+           
+            <c style="text-align: center">
+              <p class="md-3 text-black justify-content-around">Berikut adalah beberapa hasil Design Logo buatan saya :</p>
+     
+       
+          </div>
+        </div>
+
+        <div>
+          <img class="img-fluid rounded-circle mx-auto d-block" src="Logo1.jpg" alt="" width="300">
+          <br /><br />
+          <img class="img-fluid rounded-circle mx-auto d-block" src="Logo2.png" alt="" width="300">
+        </div>
+      </div>
+    </div>
+
+    <div id="blog" class="container">
+      <div class="row">
+        <div class="">
+          <b style="">
+            <h2 class="text warning text-center">Content Writer</h2>
+            <br />
+            <c style="text-align: center">
+            <p class="md-3 text-black justify-content-around">Untuk melihat beberapa hasil tulisan yang pernah saya buat, bisa dilihat di link berikut :</p>
+            <div class="row text-center">
+            <a href="https://frisamaharani.blogspot.com/"><i class="text-center fa-brands fa-blogger-b fa-6x"></i></a></div>
         </div>
       </div>
     </div>
@@ -116,26 +161,20 @@
     <!-- !-- Akhir Projects -->
     <!-- contact -->
     <div id="contact" class="container">
-      <h2 class="text-center bg-info text-warning-emphasis"></h2>
-      </div>
-      <div class="card text-bg-secondary container">
-        <img src="2.jpg" alt="" class="card-img-top">
-        <div class="card-body" >
-          <div class="row text-center">
-            <div class="">
-              <a class="" href="https://t.me/frisaam"><i class="fa-brands fa-telegram fa-4x"></i></a>
-           
-              <a href="https://www.linkedin.com/in/frisa-maharani/"><i class="fa-brands fa-linkedin fa-4x"></i></a>
-              <a href="https://wa.me/6281389422276"><i class="fa-brands fa-whatsapp-square fa-4x"></i></a>
-            
-              
-    
-            
-        </div>
-        </div>
+      <h2 class="text-center bg-info text-warning-emphasis">Contact Me</h2>
     </div>
-</div>
-
+    <div class="card text-bg-secondary container">
+      <img src="2.jpg" alt="" class="card-img-top .img-fluid" />
+      <div class="card-body">
+        <div class="row text-center">
+          <div class="">
+            <a href="https://t.me/frisaam"><i class="fa-brands fa-telegram fa-4x"></i></a>
+            <a href="https://www.linkedin.com/in/frisa-maharani/"><i class="fa-brands fa-linkedin fa-4x"></i></a>
+            <a href="https://wa.me/6281389422276"><i class="fa-brands fa-whatsapp-square fa-4x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Akhir contact -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
